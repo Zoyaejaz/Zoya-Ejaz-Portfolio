@@ -51,8 +51,8 @@ export default function About() {
       ctx = gsap.context(() => {
         // Stats count-up animation
         const stats = [
-          { ref: yearsRef, target: 5, suffix: '+' },
-          { ref: projectsRef, target: 40, suffix: '+' },
+          { ref: yearsRef, target: 3, suffix: '+' },
+          { ref: projectsRef, target: 20, suffix: '+' },
           { ref: awardsRef, target: 12, suffix: '' },
         ];
 

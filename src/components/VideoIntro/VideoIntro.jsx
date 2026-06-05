@@ -19,6 +19,7 @@ export default function VideoIntro({ videoSrc = '/hero.mp4' }) {
   const lastNameRef = useRef(null);
   const roleRef = useRef(null);
   const scrollHintRef = useRef(null);
+  const playCountRef = useRef(0);
 
   const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -105,11 +106,33 @@ export default function VideoIntro({ videoSrc = '/hero.mp4' }) {
     if (isPlaying) {
       vid.pause();
       bgVid?.pause();
+      setIsPlaying(false);
     } else {
+      if (playCountRef.current >= 2) {
+        playCountRef.current = 0;
+      }
       vid.play();
       bgVid?.play();
+      setIsPlaying(true);
     }
-    setIsPlaying(!isPlaying);
+  };
+
+  const handleVideoEnded = () => {
+    playCountRef.current += 1;
+    if (playCountRef.current < 2) {
+      if (videoRef.current) {
+        videoRef.current.currentTime = 0;
+        videoRef.current.play().catch(err => console.log('Video play error:', err));
+      }
+      if (bgVideoRef.current) {
+        bgVideoRef.current.currentTime = 0;
+        bgVideoRef.current.play().catch(err => console.log('BgVideo play error:', err));
+      }
+    } else {
+      setIsPlaying(false);
+      if (videoRef.current) videoRef.current.pause();
+      if (bgVideoRef.current) bgVideoRef.current.pause();
+    }
   };
 
   const handleScrollClick = () => {
@@ -132,7 +155,6 @@ export default function VideoIntro({ videoSrc = '/hero.mp4' }) {
           className={styles.bgVideo}
           src={videoSrc}
           autoPlay
-          loop
           muted
           playsInline
           aria-hidden="true"
@@ -152,10 +174,10 @@ export default function VideoIntro({ videoSrc = '/hero.mp4' }) {
           className={styles.video}
           src={videoSrc}
           autoPlay
-          loop
           muted={isMuted}
           playsInline
           onCanPlay={handleVideoLoad}
+          onEnded={handleVideoEnded}
           aria-label="Portfolio introduction video"
         />
         {/* Subtle inner shadow on video */}

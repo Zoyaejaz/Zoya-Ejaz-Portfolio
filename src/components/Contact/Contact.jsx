@@ -89,16 +89,32 @@ export default function Contact() {
     setFormState(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus('sending');
     
-    // Simulate submission API call
-    setTimeout(() => {
-      setFormStatus('success');
-      setFormState({ name: '', email: '', subject: '', message: '' });
-      setFocusedInput({ name: false, email: false, subject: false, message: false });
-    }, 1500);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      });
+
+      if (response.ok) {
+        setFormStatus('success');
+        setFormState({ name: '', email: '', subject: '', message: '' });
+        setFocusedInput({ name: false, email: false, subject: false, message: false });
+      } else {
+        const data = await response.json();
+        console.error('SMTP API Submission Error:', data.error || response.statusText);
+        setFormStatus('error');
+      }
+    } catch (err) {
+      console.error('Contact form submission network error:', err);
+      setFormStatus('error');
+    }
   };
 
   return (
@@ -272,6 +288,12 @@ export default function Contact() {
                       </>
                     )}
                   </button>
+
+                  {formStatus === 'error' && (
+                    <p className={styles.errorMessage}>
+                      Transmission failed. Please verify credentials or email directly to zejaz6806@gmail.com
+                    </p>
+                  )}
 
                 </form>
               )}
