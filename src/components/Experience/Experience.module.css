@@ -1,0 +1,239 @@
+/* ─────────────────────────────────────────
+   Experience.module.css
+   Cinematic experience timeline - Single Role layout
+ ───────────────────────────────────────── */
+
+.experience {
+  width: 100%;
+  min-height: 100vh;
+  background: #080604;
+  color: #f5ede0;
+  padding: clamp(4rem, 12vh, 8rem) 0;
+  position: relative;
+  overflow: hidden;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  z-index: 5;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+/* ── Section Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: clamp(3rem, 7vh, 5rem);
+}
+
+.secNumber {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: #ff7a2f;
+  font-weight: 550;
+  text-shadow: 0 0 10px rgba(255, 122, 47, 0.35);
+}
+
+.secDivider {
+  width: 40px;
+  height: 1px;
+  background: rgba(255, 122, 47, 0.6);
+}
+
+.secTitle {
+  font-size: 0.82rem;
+  letter-spacing: 0.25em;
+  color: rgba(245, 237, 224, 0.98);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Grid Layout ── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+
+/* Left Column */
+.cardLeft {
+  background: rgba(12, 10, 8, 0.92);
+  border: 1px solid rgba(255, 180, 100, 0.28);
+  border-radius: 24px;
+  padding: clamp(2rem, 4vw, 3rem);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.period {
+  font-size: 0.68rem;
+  font-weight: 550;
+  letter-spacing: 0.18em;
+  color: #ff7a2f;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.roleTitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+  font-weight: 600;
+  color: #ffffff; /* Solid White */
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.companyName {
+  font-size: 0.9rem;
+  color: #ffb06b;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+.summary {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: rgba(245, 237, 224, 0.98);
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+}
+
+/* Metrics */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  border-top: 1px solid rgba(255, 180, 100, 0.14);
+  padding-top: 2rem;
+}
+
+.metricItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.metricValue {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.8rem, 2.4vw, 2.4rem);
+  font-weight: 600;
+  color: #ffb06b;
+  line-height: 1;
+}
+
+.metricLabel {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(245, 237, 224, 0.9);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Right Column */
+.cardRight {
+  background: rgba(12, 10, 8, 0.92);
+  border: 1px solid rgba(255, 180, 100, 0.28);
+  border-radius: 24px;
+  padding: clamp(2rem, 4vw, 3rem);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.colSub {
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(245, 237, 224, 0.95);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.bulletList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.bulletItem {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.bulletDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ff7a2f;
+  box-shadow: 0 0 6px #ff7a2f;
+  margin-top: 0.55rem;
+  flex-shrink: 0;
+}
+
+.bulletItem p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(245, 237, 224, 0.98);
+  font-weight: 400;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 180, 100, 0.14);
+  margin: 2rem 0;
+}
+
+.techTitle {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(245, 237, 224, 0.9);
+  margin-bottom: 0.85rem;
+  font-weight: 600;
+}
+
+.techTags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.68rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+/* ── Responsive timeline layouts ── */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardLeft, .cardRight {
+    padding: 1.8rem 1.4rem;
+  }
+  
+  .metricsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-top: 1.8rem;
+  }
+}

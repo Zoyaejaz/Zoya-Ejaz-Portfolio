@@ -1,0 +1,489 @@
+/* ─────────────────────────────────────────
+   Contact.module.css
+   Cinematic contact section - High Contrast Refinements
+ ───────────────────────────────────────── */
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background: #0c0a08; /* Alternating slightly darker background for separation */
+  color: #f5ede0;
+  padding: clamp(4rem, 12vh, 8rem) 0 3rem;
+  position: relative;
+  overflow: hidden;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  z-index: 5;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - clamp(8rem, 24vh, 16rem));
+}
+
+/* ── Section Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: clamp(3rem, 7vh, 5rem);
+}
+
+.secNumber {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: #ff7a2f;
+  font-weight: 550;
+  text-shadow: 0 0 10px rgba(255, 122, 47, 0.35);
+}
+
+.secDivider {
+  width: 40px;
+  height: 1px;
+  background: rgba(255, 122, 47, 0.6);
+}
+
+.secTitle {
+  font-size: 0.82rem;
+  letter-spacing: 0.25em;
+  color: rgba(245, 237, 224, 0.98);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Grid Layout ── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 8vw, 6rem);
+  margin-bottom: auto;
+  align-items: start;
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  line-height: 1.1;
+  color: #ffffff; /* Solid White */
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+}
+
+.subtext {
+  font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+  line-height: 1.7;
+  color: rgba(245, 237, 224, 0.95);
+  font-weight: 400;
+  margin-bottom: 3rem;
+  max-width: 44ch;
+}
+
+/* ── Email Copier ── */
+.emailWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 3rem;
+  align-self: flex-start;
+}
+
+.emailLabel {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(245, 237, 224, 0.8);
+  font-weight: 600;
+}
+
+.emailBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: rgba(12, 10, 8, 0.92);
+  border: 1px solid rgba(255, 180, 100, 0.28);
+  padding: 0.8rem 1.6rem;
+  border-radius: 100px;
+  cursor: pointer;
+  color: #ffb06b;
+  transition: all 0.3s ease;
+}
+
+.emailBtn:hover {
+  background: rgba(255, 122, 47, 0.12);
+  border-color: rgba(255, 122, 47, 0.55);
+  box-shadow: 0 0 15px rgba(255, 122, 47, 0.25);
+  transform: translateY(-1px);
+}
+
+.emailValue {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.copyIcon {
+  width: 16px;
+  height: 16px;
+  color: rgba(245, 237, 224, 0.7); /* Brighter copy icon */
+  transition: color 0.3s ease;
+}
+
+.emailBtn:hover .copyIcon {
+  color: #ffb06b;
+  filter: drop-shadow(0 0 4px #ffb06b);
+}
+
+/* Copied Tooltip */
+.tooltip {
+  position: absolute;
+  bottom: -2.8rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: rgba(255, 122, 47, 0.18);
+  border: 1px solid rgba(255, 122, 47, 0.45);
+  color: #ffb06b;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.tooltipVisible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Info detail rows */
+.linksContainer {
+  display: flex;
+  gap: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 3.5rem;
+}
+
+.linkItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.linkTitle {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(245, 237, 224, 0.8);
+  font-weight: 600;
+}
+
+.linkDetail {
+  font-size: 0.88rem;
+  color: #ffffff; /* Solid White */
+  font-weight: 400;
+}
+
+/* Socials icons */
+.socials {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.socialLink {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 180, 100, 0.28);
+  background: rgba(12, 10, 8, 0.92);
+  color: rgba(245, 237, 224, 0.85); /* Brighter text */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #ffb06b;
+  border-color: rgba(255, 122, 47, 0.5);
+  background: rgba(255, 122, 47, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 122, 47, 0.2);
+}
+
+/* ── Contact Form Card ── */
+.formCol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 550px;
+  background: rgba(12, 10, 8, 0.92);
+  border: 1px solid rgba(255, 180, 100, 0.28);
+  border-radius: 24px;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+/* Floating labels */
+.inputGroup {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input, .textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(245, 237, 224, 0.25); /* Brighter border line */
+  padding: 0.75rem 0;
+  color: #ffffff; /* Solid White */
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: 350;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-bottom-color: rgba(255, 122, 47, 0.75);
+}
+
+.label {
+  position: absolute;
+  top: 0.75rem;
+  left: 0;
+  color: rgba(245, 237, 224, 0.85);
+  font-size: 0.88rem;
+  font-weight: 400;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Floating behavior triggers */
+.groupFocused .label,
+.input:focus ~ .label,
+.textarea:focus ~ .label {
+  top: -1.1rem;
+  font-size: 0.68rem;
+  color: #ff7a2f;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.areaGroup {
+  margin-top: 0.5rem;
+}
+
+.textarea {
+  resize: none;
+}
+
+/* Submit Button */
+.submitBtn {
+  font-size: 0.72rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ffffff; /* Solid White */
+  background: rgba(4, 3, 2, 0.6);
+  border: 1px solid rgba(255, 180, 100, 0.22); /* Brighter */
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitBtn:hover {
+  background: rgba(255, 122, 47, 0.18);
+  border-color: rgba(255, 122, 47, 0.6);
+  box-shadow: 0 0 20px rgba(255, 122, 47, 0.3);
+  transform: translateY(-1px);
+}
+
+.submitBtn:active {
+  transform: translateY(1px);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submitArrow {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;
+  color: #ffb06b;
+}
+
+.submitBtn:hover .submitArrow {
+  transform: translateX(4px);
+  color: #ff7a2f;
+  filter: drop-shadow(0 0 8px #ff7a2f);
+}
+
+/* Form success view styling */
+.successState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.successCheck {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 122, 47, 0.12);
+  border: 1px solid rgba(255, 122, 47, 0.5);
+  color: #ffb06b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 0 20px rgba(255, 122, 47, 0.2);
+}
+
+.successCheck svg {
+  width: 28px;
+  height: 28px;
+}
+
+.successTitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.successDesc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(245, 237, 224, 0.98);
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+  max-width: 28ch;
+}
+
+.resetBtn {
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(245, 237, 224, 0.85);
+  background: none;
+  border: 1px solid rgba(245, 237, 224, 0.3);
+  padding: 0.75rem 1.6rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resetBtn:hover {
+  background: rgba(245, 237, 224, 0.08);
+  border-color: rgba(245, 237, 224, 0.65);
+  color: #ffffff;
+}
+
+/* ── Footer ── */
+.footer {
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.footerDivider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 180, 100, 0.14);
+  margin-bottom: 2rem;
+}
+
+.footerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  color: rgba(245, 237, 224, 0.8);
+  letter-spacing: 0.03em;
+  font-weight: 450;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive grids ── */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .formCol {
+    justify-content: center;
+  }
+  
+  .formCard {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footerRow {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.6rem;
+  }
+  
+  .linksContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .emailWrapper {
+    margin-bottom: 2.2rem;
+  }
+  
+  .formCard {
+    padding: 1.8rem 1.4rem;
+  }
+}

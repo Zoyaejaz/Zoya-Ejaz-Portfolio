@@ -1,0 +1,349 @@
+/* ─────────────────────────────────────────
+   About.module.css
+   Cinematic about section - High Contrast & ML refinements
+ ───────────────────────────────────────── */
+
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: #080604;
+  color: #f5ede0;
+  padding: clamp(4rem, 12vh, 8rem) 0;
+  position: relative;
+  overflow: hidden;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  z-index: 5;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+/* ── Section Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: clamp(2.5rem, 6vh, 4rem);
+}
+
+.secNumber {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: #ff7a2f;
+  font-weight: 550;
+  text-shadow: 0 0 10px rgba(255, 122, 47, 0.35);
+}
+
+.secDivider {
+  width: 40px;
+  height: 1px;
+  background: rgba(255, 122, 47, 0.6);
+}
+
+.secTitle {
+  font-size: 0.82rem;
+  letter-spacing: 0.25em;
+  color: rgba(245, 237, 224, 0.98);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Statement Grid (2 Columns to fix empty space) ── */
+.statementGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(3rem, 6vw, 5rem);
+  margin-bottom: clamp(4rem, 10vh, 7rem);
+  align-items: center;
+}
+
+.introText {
+  max-width: 100%;
+}
+
+.statement {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.18;
+  color: #ffffff;
+  font-weight: 400;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* ── Research Focus Card ── */
+.researchCard {
+  background: rgba(12, 10, 8, 0.92);
+  border: 1px solid rgba(255, 180, 100, 0.28);
+  border-radius: 20px;
+  padding: 1.8rem 2.2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4),
+              inset 0 0 15px rgba(255, 122, 47, 0.03);
+}
+
+.researchBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ffb06b;
+  margin-bottom: 0.8rem;
+}
+
+.researchDot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ff7a2f;
+  box-shadow: 0 0 8px #ff7a2f;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+.researchTitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.01em;
+}
+
+.researchText {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: rgba(245, 237, 224, 0.95);
+  font-weight: 400;
+}
+
+/* ── Grid Layout ── */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: flex-start;
+}
+
+.gridCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.colTitle {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245, 237, 224, 0.9);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.bioParagraph {
+  font-size: clamp(0.88rem, 1.1vw, 1.05rem);
+  line-height: 1.7;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Stats Box ── */
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 180, 100, 0.18);
+  padding-top: 2.2rem;
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.statNum {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 600;
+  color: #ffb06b;
+  line-height: 0.9;
+  text-shadow: 0 0 15px rgba(255, 122, 47, 0.3);
+}
+
+.statLabel {
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(245, 237, 224, 0.9);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* ── Skills Matrix (Right Column) ── */
+.skillsColumn {
+  background: rgba(12, 10, 8, 0.92);
+  border: 1px solid rgba(255, 180, 100, 0.28);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: clamp(1.8rem, 4vw, 3rem);
+  border-radius: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 180, 100, 0.12);
+  padding-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.tabBtn {
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(245, 237, 224, 0.88);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tabBtn::after {
+  content: '';
+  position: absolute;
+  bottom: -0.9rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff7a2f;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 8px #ff7a2f;
+}
+
+.tabBtn:hover {
+  color: #ffffff;
+}
+
+.tabBtnActive {
+  color: #ffb06b !important;
+  font-weight: 600;
+}
+
+.tabBtnActive::after {
+  transform: scaleX(1);
+}
+
+.skillsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.skillRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.skillMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+}
+
+.skillName {
+  color: #ffffff;
+  font-weight: 450;
+}
+
+.skillPercent {
+  color: #ffb06b;
+  font-weight: 600;
+}
+
+.progressBarBg {
+  width: 100%;
+  height: 4px;
+  background: rgba(245, 237, 224, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBarFill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, #ff7a2f, #ffb06b);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 122, 47, 0.6);
+  animation: fillAnimation 1.2s cubic-bezier(0.1, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes fillAnimation {
+  from { width: 0; }
+  to { width: var(--target-width); }
+}
+
+/* ── Responsive Layouts ── */
+@media (max-width: 992px) {
+  .statementGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .skillsColumn {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .researchCard {
+    padding: 1.5rem;
+  }
+
+  .statsContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 1.8rem;
+  }
+  
+  .skillsColumn {
+    padding: 1.5rem 1.2rem;
+  }
+  
+  .tabs {
+    gap: 0.2rem;
+  }
+  
+  .tabBtn {
+    font-size: 0.6rem;
+    padding: 0.4rem 0.4rem;
+  }
+}

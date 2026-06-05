@@ -1,0 +1,99 @@
+{
+  "components\\About\\About.jsx -> gsap": {
+    "id": "components\\About\\About.jsx -> gsap",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_index_js.js"
+    ]
+  },
+  "components\\About\\About.jsx -> gsap/ScrollTrigger": {
+    "id": "components\\About\\About.jsx -> gsap/ScrollTrigger",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_ScrollTrigger_js.js"
+    ]
+  },
+  "components\\Certifications\\Certifications.jsx -> gsap": {
+    "id": "components\\Certifications\\Certifications.jsx -> gsap",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_index_js.js"
+    ]
+  },
+  "components\\Certifications\\Certifications.jsx -> gsap/ScrollTrigger": {
+    "id": "components\\Certifications\\Certifications.jsx -> gsap/ScrollTrigger",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_ScrollTrigger_js.js"
+    ]
+  },
+  "components\\CinematicLayer\\CinematicLayer.jsx -> three": {
+    "id": "components\\CinematicLayer\\CinematicLayer.jsx -> three",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_three_build_three_module_js.js"
+    ]
+  },
+  "components\\Contact\\Contact.jsx -> gsap": {
+    "id": "components\\Contact\\Contact.jsx -> gsap",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_index_js.js"
+    ]
+  },
+  "components\\Contact\\Contact.jsx -> gsap/ScrollTrigger": {
+    "id": "components\\Contact\\Contact.jsx -> gsap/ScrollTrigger",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_ScrollTrigger_js.js"
+    ]
+  },
+  "components\\Experience\\Experience.jsx -> gsap": {
+    "id": "components\\Experience\\Experience.jsx -> gsap",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_index_js.js"
+    ]
+  },
+  "components\\Experience\\Experience.jsx -> gsap/ScrollTrigger": {
+    "id": "components\\Experience\\Experience.jsx -> gsap/ScrollTrigger",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_ScrollTrigger_js.js"
+    ]
+  },
+  "components\\Services\\Services.jsx -> gsap": {
+    "id": "components\\Services\\Services.jsx -> gsap",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_index_js.js"
+    ]
+  },
+  "components\\Services\\Services.jsx -> gsap/ScrollTrigger": {
+    "id": "components\\Services\\Services.jsx -> gsap/ScrollTrigger",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_ScrollTrigger_js.js"
+    ]
+  },
+  "components\\VideoIntro\\VideoIntro.jsx -> ../CinematicLayer/CinematicLayer": {
+    "id": "components\\VideoIntro\\VideoIntro.jsx -> ../CinematicLayer/CinematicLayer",
+    "files": [
+      "static/css/_app-pages-browser_src_components_CinematicLayer_CinematicLayer_jsx.css",
+      "static/chunks/_app-pages-browser_src_components_CinematicLayer_CinematicLayer_jsx.js"
+    ]
+  },
+  "components\\VideoIntro\\VideoIntro.jsx -> gsap": {
+    "id": "components\\VideoIntro\\VideoIntro.jsx -> gsap",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_index_js.js"
+    ]
+  },
+  "components\\VideoIntro\\VideoIntro.jsx -> gsap/ScrollTrigger": {
+    "id": "components\\VideoIntro\\VideoIntro.jsx -> gsap/ScrollTrigger",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_ScrollTrigger_js.js"
+    ]
+  },
+  "components\\Works\\Works.jsx -> gsap": {
+    "id": "components\\Works\\Works.jsx -> gsap",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_index_js.js"
+    ]
+  },
+  "components\\Works\\Works.jsx -> gsap/ScrollTrigger": {
+    "id": "components\\Works\\Works.jsx -> gsap/ScrollTrigger",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_gsap_ScrollTrigger_js.js"
+    ]
+  }
+}
