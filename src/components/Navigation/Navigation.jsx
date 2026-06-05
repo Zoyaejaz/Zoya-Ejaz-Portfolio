@@ -10,7 +10,7 @@ const navLinks = [
   { label: 'Experience', href: '#experience' },
   { label: 'Certifications', href: '#certifications' },
   { label: 'Services', href: '#services' },
-  { label: 'Contact', href: '#contact' },
+  
 ];
 
 export default function Navigation() {
