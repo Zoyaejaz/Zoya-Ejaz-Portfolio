@@ -174,7 +174,7 @@ Or connect your GitHub repo directly at [vercel.com](https://vercel.com) for aut
 
 
 
-### 7. Color Theme (CSS Variables)
+###  Color Theme (CSS Variables)
 
 ```css
 /* src/app/globals.css or VideoIntro.module.css */
@@ -186,7 +186,7 @@ Or connect your GitHub repo directly at [vercel.com](https://vercel.com) for aut
 }
 ```
 
-### 8. Particle Colors — `CinematicLayer.jsx`
+###  Particle Colors — `CinematicLayer.jsx`
 
 ```js
 // Lines 46–49 — change to match your palette
