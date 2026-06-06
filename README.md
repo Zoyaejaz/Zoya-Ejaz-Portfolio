@@ -172,77 +172,7 @@ Or connect your GitHub repo directly at [vercel.com](https://vercel.com) for aut
 
 <br />
 
-## 🛠 Customization Guide
 
-Everything you need to personalize is clearly marked with `── EDIT ──` comments throughout the code. Here's a quick map:
-
-### 1. Personal Info — `src/app/page.jsx` & `VideoIntro.jsx`
-
-```jsx
-// VideoIntro.jsx — hero name & tagline
-<span ref={firstNameRef} className={styles.firstName}>ALEX</span>   // → Your first name
-<span ref={lastNameRef}  className={styles.lastName}>MORGAN</span>  // → Your last name
-
-// Hero role line
-Creative Developer & Digital Architect  // → Your title
-
-// Availability tagline
-Available for work · 2024              // → Update as needed
-```
-
-### 2. About Section — `portfolio-full.html` (or split into a component)
-
-```html
-<!-- Replace with your real bio paragraphs -->
-<p>I'm a <strong>creative developer</strong> based in [Your City]...</p>
-
-<!-- Update your stats -->
-<span class="stat-num">5<span>+</span></span>   <!-- Years of experience -->
-<span class="stat-num">40<span>+</span></span>  <!-- Projects shipped    -->
-<span class="stat-num">12<span>+</span></span>  <!-- Happy clients       -->
-```
-
-### 3. Work Experience
-
-```html
-<!-- Each .exp-item block = one job -->
-<span class="exp-date">2022 — Present</span>
-<div class="exp-company">Your Company Name</div>
-<div class="exp-role">Senior Creative Developer</div>
-<p class="exp-desc">Your description here...</p>
-```
-
-### 4. Projects
-
-```html
-<!-- Each .proj-card = one project -->
-<div class="proj-name">Project One Title</div>       <!-- Project name    -->
-<p class="proj-desc">Brief description...</p>         <!-- What it does   -->
-<span class="proj-year">2024</span>                   <!-- Year built      -->
-<span class="proj-type">Web / Interactive</span>      <!-- Category label  -->
-<a href="YOUR_LIVE_URL" class="proj-link">...</a>     <!-- Live link       -->
-
-<!-- Tech stack pills -->
-<span class="proj-tech">Next.js</span>
-<span class="proj-tech">Three.js</span>
-```
-
-### 5. Testimonials
-
-```html
-<p class="testi-text">"Your real testimonial quote here..."</p>
-<div class="testi-avatar">JD</div>           <!-- Initials         -->
-<span class="testi-name">Jane Doe</span>     <!-- Full name        -->
-<span class="testi-position">CPO, Company</span>
-```
-
-### 6. Contact & Social Links
-
-```html
-<a href="mailto:hello@yoursite.com">hello@yoursite.com</a>
-<a href="https://linkedin.com/in/yourhandle">/in/yourhandle</a>
-<a href="https://github.com/yourhandle">@yourhandle</a>
-```
 
 ### 7. Color Theme (CSS Variables)
 
@@ -328,20 +258,6 @@ If you found this useful, a ⭐ on the repo is always appreciated.
 
 <br />
 
-## 🤝 Connect
-
-<div align="center">
-
-**Alex Morgan** — Creative Developer & Digital Architect
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-yoursite.com-ff7a2f?style=for-the-badge&logo=safari&logoColor=white)](https://yoursite.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourhandle)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourhandle)
-[![Email](https://img.shields.io/badge/Email-hello@yoursite.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello@yoursite.com)
-
-</div>
-
-<br />
 
 ---
 
