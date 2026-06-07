@@ -132,7 +132,7 @@ cinematic-portfolio/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/cinematic-portfolio.git
+git clone https://github.com/Zoyaejaz/Zoya-Ejaz-Portfolio.git
 cd cinematic-portfolio
 
 # 2. Install dependencies
