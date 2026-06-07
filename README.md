@@ -1,7 +1,4 @@
 
-
-<br />
-
 ### ✦ PORTFOLIO ✦
 
 **A cinematic, immersive developer portfolio built with Next.js, Three.js & GSAP**
