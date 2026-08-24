@@ -495,3 +495,21 @@
     padding: 1.8rem 1.4rem;
   }
 }
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.socialLink svg {
+  width: 20px;
+  height: 20px;
+}
+
+.socialLink:hover {
+  transform: translateY(-3px);
+}

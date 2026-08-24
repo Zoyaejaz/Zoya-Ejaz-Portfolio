@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from 'react';
 import styles from './Contact.module.css';
-
+import { FaLinkedinIn, FaGithub, FaKaggle } from "react-icons/fa";
+import { FiFileText } from "react-icons/fi";
 export default function Contact() {
   const sectionRef = useRef(null);
   const [copied, setCopied] = useState(false);
@@ -172,11 +173,46 @@ export default function Contact() {
 
             {/* Social Links */}
             <div className={styles.socials}>
-              <a href="https://www.linkedin.com/in/zoyaejaz/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>LN</a>
-              <a href="https://github.com/Zoyaejaz" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>GH</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>TW</a>
-              <a href="https://drive.google.com/file/d/1ceq4pTABoii57hR-j9oTAH9lKf48dJij/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>CV</a>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/zoyaejaz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn />
+            </a>
+
+            <a
+              href="https://github.com/Zoyaejaz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="GitHub"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+          href="https://www.kaggle.com/zoyacoder"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialLink}
+          aria-label="Kaggle"
+        >
+          <FaKaggle />
+        </a>
+
+            <a
+              href="https://drive.google.com/file/d/1_Semh0k5-a4m9MmIpPi1pNJ6jIqhh4WF/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Resume"
+            >
+              <FiFileText />
+            </a>
+          </div>
           </div>
 
           {/* Right Column: Contact Form */}

@@ -5,28 +5,28 @@ import styles from './About.module.css';
 
 const skillData = {
   creative: [
-    { name: 'WebGL & Three.js', level: 90 },
-    { name: 'GSAP / Motion Design', level: 95 },
-    { name: 'Creative Coding & Shaders', level: 85 },
-    { name: 'UI / UX Art Direction', level: 88 },
+    { name: 'Regression & Classification', level: 90 },
+    { name: 'Feature Engineering', level: 95 },
+    { name: 'Ensemble Learning', level: 85 },
+    { name: 'SVM & Model Optimization', level: 88 },
   ],
   engineering: [
-    { name: 'React / Next.js', level: 95 },
-    { name: 'JavaScript / TypeScript', level: 92 },
-    { name: 'CSS Architecture / SCSS', level: 90 },
-    { name: 'Tailwind CSS', level: 85 },
+    { name: 'Exploratory Data Analysis', level: 95 },
+    { name: 'Statistical Analysis', level: 92 },
+    { name: 'Data Cleaning & Preprocessing', level: 90 },
+    { name: 'Data Visualization', level: 85 },
   ],
   ml: [
-    { name: 'Python & PyTorch', level: 80 },
-    { name: 'Neural Graphics & Shaders', level: 85 },
-    { name: 'Hugging Face / LLM APIs', level: 75 },
-    { name: 'TensorFlow.js', level: 70 },
+    { name: 'Natural Language Processing', level: 80 },
+    { name: 'Text Classification', level: 85 },
+    { name: 'Neural Networks & CNNs', level: 75 },
+    { name: 'LLM Fundamentals & Prompt Engineering', level: 70 },
   ],
   systems: [
-    { name: 'Node.js / Express', level: 80 },
-    { name: 'REST APIs & GraphQL', level: 85 },
-    { name: 'Git & CI/CD Pipelines', level: 78 },
-    { name: 'SQL & NoSQL Databases', level: 75 },
+    { name: 'Python, SQL & Java', level: 80 },
+    { name: 'Pandas, NumPy & Scikit-learn', level: 85 },
+    { name: 'Matplotlib & Seaborn', level: 78 },
+    { name: 'MySQL, MongoDB & Git', level: 75 },
   ],
 };
 
@@ -140,8 +140,7 @@ export default function About() {
         <div className={styles.statementGrid}>
           <div className={styles.introText}>
             <p className={styles.statement}>
-              I bridge the gap between cinematic art direction and clean creative engineering. 
-              Every pixel is a conscious design choice; every interaction is a moment of digital immersion.
+              I turn data into intelligent solutions. I build machine learning models,analyze complex datasets, and develop AI-powered applications that transform data into meaningful insights.
             </p>
           </div>
           
@@ -150,9 +149,9 @@ export default function About() {
               <span className={styles.researchDot} />
               Current Focus
             </div>
-            <h3 className={styles.researchTitle}>Creative AI &amp; Neural Graphics</h3>
+            <h3 className={styles.researchTitle}>Machine Learning &amp; AI</h3>
             <p className={styles.researchText}>
-              Investigating the intersection of deep learning and real-time graphics. Training custom models and deploying lightweight physics approximations directly in the browser via WebGL and TensorFlow.js.
+              Building predictive models and intelligent applications using machine learning, deep learning, NLP, and modern AI technologies. Exploring practical applications of AI to solve real-world problems.
             </p>
           </div>
         </div>
@@ -162,10 +161,10 @@ export default function About() {
           <div className={styles.gridCol}>
             <h3 className={styles.colTitle}>Philosophy</h3>
             <p className={styles.bioParagraph}>
-              As a Creative Developer, I design and develop high-fidelity user interfaces that leverage the full potential of hardware-accelerated animations, shaders, and immersive motion. I believe web applications shouldn't just be utilities—they should be digital environments that captivate and respond to human curiosity.
+              As an AI & ML Developer, I enjoy working at the intersection of data, algorithms, and intelligent systems. My approach combines strong data analysis, thoughtful feature engineering, and machine learning techniques to build solutions that are accurate, practical, and scalable.
             </p>
             <p className={styles.bioParagraph}>
-              My workflow blends meticulous layout structures with dynamic layouts, ensuring pixel-perfect responsive execution and optimization across all screens.
+              I believe good AI isn't just about building a model — it's about understanding the data, solving the right problem, and turning the results into something useful.
             </p>
 
             {/* Quick Stat Items */}
@@ -191,25 +190,25 @@ export default function About() {
                 className={`${styles.tabBtn} ${activeTab === 'creative' ? styles.tabBtnActive : ''}`}
                 onClick={() => setActiveTab('creative')}
               >
-                Creative
+                MACHINE LEARNING
               </button>
               <button 
                 className={`${styles.tabBtn} ${activeTab === 'engineering' ? styles.tabBtnActive : ''}`}
                 onClick={() => setActiveTab('engineering')}
               >
-                Engineering
+                DATA SCIENCE
               </button>
               <button 
                 className={`${styles.tabBtn} ${activeTab === 'ml' ? styles.tabBtnActive : ''}`}
                 onClick={() => setActiveTab('ml')}
               >
-                Machine Learning
+                AI & NLP
               </button>
               <button 
                 className={`${styles.tabBtn} ${activeTab === 'systems' ? styles.tabBtnActive : ''}`}
                 onClick={() => setActiveTab('systems')}
               >
-                Backend &amp; Tools
+                TOOLS & TECHNOLOGIES
               </button>
             </div>
 

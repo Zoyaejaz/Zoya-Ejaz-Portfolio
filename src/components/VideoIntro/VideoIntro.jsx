@@ -200,9 +200,9 @@ export default function VideoIntro({ videoSrc = '/hero.mp4' }) {
         </h1>
 
         <p ref={roleRef} className={styles.role}>
-          Creative Developer &amp; Digital Architect
+          AI & MACHINE LEARNING DEVELOPER
           <span className={styles.roleSub}>
-            Crafting cinematic web experiences at the intersection of design and code.
+            Building intelligent solutions through machine learning, data science, and artificial intelligence.
           </span>
         </p>
       </div>

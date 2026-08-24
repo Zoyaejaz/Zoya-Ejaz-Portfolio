@@ -83,7 +83,8 @@ export default function Experience() {
             <h4 className={styles.companyName}>Mittal Alliance Industries Private Limited</h4>
             
             <p className={styles.summary}>
-              Structuring high-performance WebGL modules, custom Next.js architectures, and fluid canvas animations for clients and digital agencies worldwide. Collaborating at the intersection of UX art direction and frontend engineering.
+             Developed responsive, high-fidelity web applications from Figma designs, collaborated with clients on technical requirements, and led a 5-member development team to deliver projects on time.
+
             </p>
 
             {/* Visual Client Metrics */}

@@ -7,9 +7,9 @@ const servicesData = [
   {
     id: 'creative',
     num: '01',
-    title: 'Creative Engineering',
-    description: 'Developing immersive, hardware-accelerated layouts, interactive WebGL configurators, and physics-driven canvas modules.',
-    deliverables: ['Three.js & Canvas integrations', 'WebGL & GLSL shaders development', 'GSAP Scroll-driven kinematics', 'Interactive product builders'],
+    title: 'Machine Learning',
+    description: 'Building data-driven machine learning solutions that transform raw data into accurate predictions, meaningful patterns, and actionable insights.',
+    deliverables: ['Regression & Classification Models', 'Feature Engineering & Selection', 'Ensemble Learning & SVM', 'Model Evaluation & Optimization'],
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={styles.cardIcon}>
         <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5" />
@@ -22,9 +22,9 @@ const servicesData = [
   {
     id: 'design',
     num: '02',
-    title: 'Immersive Art Direction',
-    description: 'Crafting editorial UI layouts, motion behaviors, and typography structures that establish a premium brand atmosphere.',
-    deliverables: ['Interactive design prototyping', 'Visual typography layouts', 'Dynamic layout frameworks', 'Cinematic motion systems'],
+    title: 'Data Science & Analytics',
+    description: 'Exploring complex datasets through statistical analysis, visualization, and experimentation to uncover insights that support better decisions.',
+    deliverables: ['Exploratory Data Analysis', 'Statistical Analysis & Hypothesis Testing', 'Data Cleaning & Preprocessing', 'Data Visualization & Insights'],
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={styles.cardIcon}>
         <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
@@ -36,9 +36,9 @@ const servicesData = [
   {
     id: 'architecture',
     num: '03',
-    title: 'Technical Architecture',
-    description: 'Structuring lightweight, scalable Next.js/React codebases, headless database layers, and optimizing assets for performance.',
-    deliverables: ['Next.js SSR optimization', 'Headless CMS implementations', 'Semantic SEO structures', 'Custom API designs'],
+    title: 'AI & Intelligent Systems',
+    description: 'Developing intelligent applications using modern AI techniques, NLP, deep learning, and emerging LLM technologies.',
+    deliverables: ['NLP & Text Classification', 'Neural Networks & CNNs', 'LLMs & Prompt Engineering', 'AI-Powered Applications'],
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={styles.cardIcon}>
         <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />

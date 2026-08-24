@@ -211,11 +211,12 @@
 
 .About_tabs__Lo_cl {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.4rem 0.8rem;
   margin-bottom: 2.5rem;
   border-bottom: 1px solid rgba(255, 180, 100, 0.12);
-  padding-bottom: 0.8rem;
+  padding-bottom: 1rem;
   flex-wrap: wrap;
+  row-gap: 1.2rem;
 }
 
 .About_tabBtn__p67eN {
@@ -235,7 +236,7 @@
 .About_tabBtn__p67eN::after {
   content: '';
   position: absolute;
-  bottom: -0.9rem;
+  bottom: -0.35rem;
   left: 0;
   width: 100%;
   height: 2px;
@@ -1262,6 +1263,24 @@
   .Contact_formCard__HzesU {
     padding: 1.8rem 1.4rem;
   }
+}
+.Contact_socialLink__PPZ4o {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.Contact_socialLink__PPZ4o svg {
+  width: 20px;
+  height: 20px;
+}
+
+.Contact_socialLink__PPZ4o:hover {
+  transform: translateY(-3px);
 }
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
