@@ -9,7 +9,7 @@ const CinematicLayer = dynamic(
   { ssr: false }
 );
 
-export default function VideoIntro({ videoSrc = '/hero.mp4' }) {
+export default function VideoIntro({ videoSrc = '/intro.mp4' }) {
   const sectionRef = useRef(null);
   const videoRef = useRef(null);
   const bgVideoRef = useRef(null);
