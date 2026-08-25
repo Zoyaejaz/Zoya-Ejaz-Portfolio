@@ -18,7 +18,7 @@ export default function Home() {
       <Navigation />
       
       <div id="home">
-        <VideoIntro videoSrc="/hero.mp4" />
+        <VideoIntro videoSrc="/intro.mp4" />
       </div>
 
       <hr className="sectionSeparator" />
